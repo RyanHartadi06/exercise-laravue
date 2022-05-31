@@ -34,14 +34,12 @@ export default {
   },
   methods: {
     created() {
-      // POST request using axios with async/await
       const category = { name: this.name };
       axios.post(this.url + "api/kategori", category).then((res) => {
         this.isSuccess = true;
         console.log(res);
         this.$router.push("/");
       });
-      // this.articleId = response.data.id;
     },
   },
 };
