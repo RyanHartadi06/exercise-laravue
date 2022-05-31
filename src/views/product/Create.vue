@@ -124,11 +124,6 @@ export default {
             console.log("Error", error.message);
           }
         });
-
-      // axios
-      //   .post(this.url + "api/products/store", fd)
-
-      //   });
     },
   },
 };
