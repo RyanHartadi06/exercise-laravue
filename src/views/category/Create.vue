@@ -38,7 +38,7 @@ export default {
       axios.post(this.url + "api/kategori", category).then((res) => {
         this.isSuccess = true;
         console.log(res);
-        this.$router.push("/");
+        this.$router.push("/home");
       });
     },
   },
