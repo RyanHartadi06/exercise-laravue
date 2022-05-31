@@ -1,4 +1,6 @@
 <template>
+  <h1>Category Product</h1>
+  <router-link to='/create-category'>Add Category Product</router-link>
   <table class="table">
   <thead>
     <tr>
@@ -37,3 +39,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.a {
+  color: black;
+}
+</style>

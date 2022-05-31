@@ -1,6 +1,6 @@
 <template>
   <!-- <h2>{{this.url}}</h2> -->
-  <h1>asd</h1>
+  <h1>Product Page</h1>
   <table class="table">
   <thead>
     <tr>
@@ -36,12 +36,6 @@ export default {
       list: [],
     }
   },
-  setDataPicture(data) {
-      // replace object productDetails dengan data dari API
-      this.productDetails = data;
-      // replace value gambar default dengan data dari API (galleries)
-      this.gambar_default = data.galleries[0].photo;
-    },
   async mounted() {
     let res = await axios.get(this.url+"api/products");
     console.warn(res.data);
